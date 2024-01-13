@@ -1,0 +1,16 @@
+run = "cowsay Configure me!"
+
+[nix]
+channel = "stable-23_11"
+
+[languages]
+
+[languages.nushell]
+pattern = "**/*.nu"
+[languages.nushell.languageServer]
+start = "nu --lsp --stdin"
+
+[languages.nix]
+pattern = "**/*.nix"
+[languages.nix.languageServer]
+start = "nil"
